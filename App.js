@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import HelloWorld from './root/1_Hello_World';
+import ImageScreen from './root/2_Image';
 
 const Home = ({ navigation }) => {
   return (
@@ -11,6 +12,11 @@ const Home = ({ navigation }) => {
       <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Hello World!")}>
         <Text style={styles.text}>View, Text, StyleSheet (Hello World! 출력하기)</Text>
       </TouchableOpacity>
+      
+      <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Image")}>
+        <Text style={styles.text}>Image (이미지 출력하기)</Text>
+      </TouchableOpacity>
+
     </View>
   );
 }
@@ -23,6 +29,7 @@ const App = () => {
       <Stack.Navigator initialRouteName="React Native Example Source Code">
         <Stack.Screen name="React Native Example Source Code" component={Home} />
         <Stack.Screen name="Hello World!" component={HelloWorld} />
+        <Stack.Screen name="Image" component={ImageScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
