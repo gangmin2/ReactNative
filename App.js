@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import HelloWorld from './root/1_Hello_World';
 import ImageScreen from './root/2_Image';
+import KakaoProfile from './root/3_Kakao_Profile';
 
 const Home = ({ navigation }) => {
   return (
@@ -15,6 +16,10 @@ const Home = ({ navigation }) => {
       
       <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Image")}>
         <Text style={styles.text}>Image (이미지 출력하기)</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("KakaoProfile")}>
+        <Text style={styles.text}>카카오톡 프로필 따라해보기</Text>
       </TouchableOpacity>
 
     </View>
@@ -30,6 +35,7 @@ const App = () => {
         <Stack.Screen name="React Native Example Source Code" component={Home} />
         <Stack.Screen name="Hello World!" component={HelloWorld} />
         <Stack.Screen name="Image" component={ImageScreen} />
+        <Stack.Screen name="KakaoProfile" component={KakaoProfile} />
       </Stack.Navigator>
     </NavigationContainer>
   );
