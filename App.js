@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HelloWorld from './root/1_Hello_World';
 import ImageScreen from './root/2_Image';
 import KakaoProfile from './root/3_Kakao_Profile';
+import KakaoChat from './root/4_Kakao_ChatList';
 
 const Home = ({ navigation }) => {
   return (
@@ -22,6 +23,9 @@ const Home = ({ navigation }) => {
         <Text style={styles.text}>카카오톡 프로필 따라해보기</Text>
       </TouchableOpacity>
 
+      <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("KakaoChat")}>
+        <Text style={styles.text}>카카오톡 채팅방 리스트 따라해보기</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -36,6 +40,7 @@ const App = () => {
         <Stack.Screen name="Hello World!" component={HelloWorld} />
         <Stack.Screen name="Image" component={ImageScreen} />
         <Stack.Screen name="KakaoProfile" component={KakaoProfile} />
+        <Stack.Screen name="KakaoChat" component={KakaoChat} />
       </Stack.Navigator>
     </NavigationContainer>
   );
