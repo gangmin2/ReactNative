@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet, Image, FlatList, TouchableOpacity, Alert } from 'react-native'
+import { View, Text, StyleSheet, Image, FlatList, TouchableOpacity, Alert, Linking } from 'react-native'
 
 const DATA = [
     {
@@ -237,7 +237,7 @@ const KakaoChat = () => {
             <FlatList
                 style={styles.container}
                 ListHeaderComponent={
-                    <TouchableOpacity style={styles.adContainer} onPress={() => createAlert("광고")}>
+                    <TouchableOpacity style={styles.adContainer} onPress={() => Linking.openURL("https://www.naver.com/")}>
                         <Text style={styles.adText}>광고 배너</Text>
                     </TouchableOpacity>
                 }
