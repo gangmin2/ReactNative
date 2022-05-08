@@ -1,2 +1,2 @@
 # react-native
-Source for React Native Study
+Example Source for React Native Study
