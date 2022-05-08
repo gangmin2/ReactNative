@@ -50,8 +50,8 @@ const KakaoTab = () => {
     return (
         <Tab.Navigator
             initialRouteName='친구'
-            tabBarOptions={{
-                showLabel: false
+            screenOptions={{
+                tabBarShowLabel: false
             }}
         >
             <Tab.Screen
