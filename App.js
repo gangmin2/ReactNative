@@ -8,7 +8,8 @@ import ImageScreen from './root/2_Image';
 import KakaoProfile from './root/3_Kakao_Profile';
 import KakaoChat from './root/4_Kakao_ChatList';
 import KakaoTab from './root/5_Kakao_Tab';
-import Loading from './root/6_Loading'
+import Loading from './root/6_Loading';
+import Layout from './root/7_Layout';
 
 const Home = ({ navigation }) => {
   return (
@@ -36,6 +37,10 @@ const Home = ({ navigation }) => {
       <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Loading")}>
         <Text style={styles.text}>ActivityIndicator (로딩 인디케이터 띄워보기)</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Layout and Style")}>
+        <Text style={styles.text}>Layout and Style (여러가지 레이아웃 및 스타일 구성해보기)</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -53,6 +58,7 @@ const App = () => {
         <Stack.Screen name="KakaoChat" component={KakaoChat} />
         <Stack.Screen name="KakaoTab" component={KakaoTab} />
         <Stack.Screen name="Loading" component={Loading} />
+        <Stack.Screen name="Layout and Style" component={Layout} options={{headerShown: false}} />
       </Stack.Navigator>
     </NavigationContainer>
   );
