@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, Text, StyleSheet, Button, ScrollView } from 'react-native';
 
 const TestView = ({ value, color, count }) => {
     if (count) {
@@ -36,13 +36,13 @@ const AlignItems = ({ navigation }) => {
             <Button title="single" onPress={() => setCount(false)} color={count ? 'skyblue' : 'blue'}/>
             <Button title="multi" onPress={() => setCount(true)} color={count ? 'blue' : 'skyblue'}/>
             <View style={{marginTop: 20}}>
-                <View style={{flexDirection: 'row'}}>
+                <ScrollView horizontal={true} style={{flexDirection: 'row'}}>
                     <Button title="baseline" onPress={() => [setValue("baseline"), setSelected(0)]} color={selected == 0 ? 'blue' : 'skyblue'}/>
                     <Button title="center" onPress={() => [setValue("center"), setSelected(1)]} color={selected == 1 ? 'blue' : 'skyblue'}/>
                     <Button title="flex-start" onPress={() => [setValue("flex-start"), setSelected(2)]} color={selected == 2 ? 'blue' : 'skyblue'}/>
                     <Button title="flex-end" onPress={() => [setValue("flex-end"), setSelected(3)]} color={selected == 3 ? 'blue' : 'skyblue'}/>
                     <Button title="stretch" onPress={() => [setValue("stretch"), setSelected(4)]} color={selected == 4 ? 'blue' : 'skyblue'}/>
-                </View>
+                </ScrollView>
                 <View  style={{flexDirection: 'row', marginTop: 20}}>
                 </View>
             </View>
