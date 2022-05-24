@@ -26,7 +26,7 @@ const TestView = ({ value, color, count }) => {
 }
 
 const AlignItems = ({ navigation }) => {
-    const [value, setValue] = useState("center")
+    const [value, setValue] = useState("baseline")
     const [selected, setSelected] = useState(0)
     const [count, setCount] = useState(false)
 
