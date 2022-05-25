@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         margin: 20
     },
     contentText: {
-        fontSize: 20,
+        fontSize: 15,
         color: 'white',
         fontWeight: '600'
     }
