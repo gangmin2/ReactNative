@@ -26,7 +26,8 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     text: {
-        fontSize: 20
+        fontSize: 25,
+        fontWeight: 'bold'
     }
 })
 
