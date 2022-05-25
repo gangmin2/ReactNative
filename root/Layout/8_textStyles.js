@@ -3,34 +3,34 @@ import { View, Text, StyleSheet, ScrollView, Button } from 'react-native';
 
 const ColorStyle = () => {
     return (
-        <View style={styles.container}>
-            <Text style={{fontSize: 40, color: 'red', marginVertical: 10}}>color: 'red'</Text>
-            <Text style={{fontSize: 40, color: 'orange', marginVertical: 10}}>color: 'orange'</Text>
-            <Text style={{fontSize: 40, color: '#101916', marginVertical: 10}}>color: '#101916'</Text>
-            <Text style={{fontSize: 40, color: '#009DFF', marginVertical: 10}}>color: '#009DFF'</Text>
-            <Text style={{fontSize: 40, color: 'rgb(255, 0, 255)', marginVertical: 10}}>color: 'rgb(255, 0, 255)'</Text>
-            <Text style={{fontSize: 40, color: 'rgba(25, 90, 10, 1.0)', marginVertical: 10}}>color: 'rgba(25, 90, 10, 1.0)'</Text>
-            <Text style={{fontSize: 40, color: 'blue', marginVertical: 10}}>color: 'blue'</Text>
-            <Text style={{fontSize: 40, color: '#53D0AB', marginVertical: 10}}>color: '#53D0AB'</Text>
-        </View>
+        <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
+            <Text style={{fontSize: 30, color: 'red', marginVertical: 10}}>color: 'red'</Text>
+            <Text style={{fontSize: 30, color: 'orange', marginVertical: 10}}>color: 'orange'</Text>
+            <Text style={{fontSize: 30, color: '#101916', marginVertical: 10}}>color: '#101916'</Text>
+            <Text style={{fontSize: 30, color: '#009DFF', marginVertical: 10}}>color: '#009DFF'</Text>
+            <Text style={{fontSize: 30, color: 'rgb(255, 0, 255)', marginVertical: 10}}>color: 'rgb(255, 0, 255)'</Text>
+            <Text style={{fontSize: 30, color: 'rgba(25, 90, 10, 1.0)', marginVertical: 10}}>color: 'rgba(25, 90, 10, 1.0)'</Text>
+            <Text style={{fontSize: 30, color: 'blue', marginVertical: 10}}>color: 'blue'</Text>
+            <Text style={{fontSize: 30, color: '#53D0AB', marginVertical: 10}}>color: '#53D0AB'</Text>
+        </ScrollView>
     )
 }
 
 const FontFamilyStyle = () => {
     return (
-        <View style={styles.container}>
-            <Text style={{fontSize: 40, fontFamily: 'serif', marginVertical: 10}}>fontFamily: 'serif'</Text>
-            <Text style={{fontSize: 40, fontFamily: 'sans-sefif', marginVertical: 10}}>fontFamily: 'sans-serif'</Text>
-            <Text style={{fontSize: 40, fontFamily: 'monospace', marginVertical: 10}}>fontFamily: 'monospace'</Text>
-            <Text style={{fontSize: 40, fontFamily: 'cursive', marginVertical: 10}}>fontFamily: 'cursive'</Text>
-            <Text style={{fontSize: 40, fontFamily: 'fantasy', marginVertical: 10}}>fontFamily: 'fantasy'</Text>
-        </View>
+        <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
+            <Text style={{fontSize: 30, fontFamily: 'serif', marginVertical: 10}}>fontFamily: 'serif'</Text>
+            <Text style={{fontSize: 30, fontFamily: 'sans-sefif', marginVertical: 10}}>fontFamily: 'sans-serif'</Text>
+            <Text style={{fontSize: 30, fontFamily: 'monospace', marginVertical: 10}}>fontFamily: 'monospace'</Text>
+            <Text style={{fontSize: 30, fontFamily: 'cursive', marginVertical: 10}}>fontFamily: 'cursive'</Text>
+            <Text style={{fontSize: 30, fontFamily: 'fantasy', marginVertical: 10}}>fontFamily: 'fantasy'</Text>
+        </ScrollView>
     )
 }
 
 const FontSizeStyle = () => {
     return (
-        <View>
+        <ScrollView showsVerticalScrollIndicator={false}>
             <Text style={{fontSize: 10}}>fontSize: 10</Text>
             <Text style={{fontSize: 20}}>fontSize: 20</Text>
             <Text style={{fontSize: 30}}>fontSize: 30</Text>
@@ -38,35 +38,35 @@ const FontSizeStyle = () => {
             <Text style={{fontSize: 50}}>fontSize: 50</Text>
             <Text style={{fontSize: 60}}>fontSize: 60</Text>
             <Text style={{fontSize: 70}}>fontSize: 70</Text>
-        </View>
+        </ScrollView>
     )
 }
 
 const FontWeightStyle = () => {
     return (
-        <View>
-            <Text style={{fontSize: 50, fontWeight: 'nomal'}}>fontWeight: nomal</Text>
-            <Text style={{fontSize: 50, fontWeight: 'bold'}}>fontWeight: bold</Text>
-            <Text style={{fontSize: 50, fontWeight: '100'}}>fontWeight: 100</Text>
-            <Text style={{fontSize: 50, fontWeight: '200'}}>fontWeight: 200</Text>
-            <Text style={{fontSize: 50, fontWeight: '300'}}>fontWeight: 300</Text>
-            <Text style={{fontSize: 50, fontWeight: '400'}}>fontWeight: 400</Text>
-            <Text style={{fontSize: 50, fontWeight: '500'}}>fontWeight: 500</Text>
-            <Text style={{fontSize: 50, fontWeight: '600'}}>fontWeight: 600</Text>
-            <Text style={{fontSize: 50, fontWeight: '700'}}>fontWeight: 700</Text>
-            <Text style={{fontSize: 50, fontWeight: '800'}}>fontWeight: 800</Text>
-            <Text style={{fontSize: 50, fontWeight: '900'}}>fontWeight: 900</Text>
-        </View>
+        <ScrollView showsVerticalScrollIndicator={false}>
+            <Text style={{fontSize: 30, fontWeight: 'nomal'}}>fontWeight: nomal</Text>
+            <Text style={{fontSize: 30, fontWeight: 'bold'}}>fontWeight: bold</Text>
+            <Text style={{fontSize: 30, fontWeight: '100'}}>fontWeight: 100</Text>
+            <Text style={{fontSize: 30, fontWeight: '200'}}>fontWeight: 200</Text>
+            <Text style={{fontSize: 30, fontWeight: '300'}}>fontWeight: 300</Text>
+            <Text style={{fontSize: 30, fontWeight: '400'}}>fontWeight: 400</Text>
+            <Text style={{fontSize: 30, fontWeight: '500'}}>fontWeight: 500</Text>
+            <Text style={{fontSize: 30, fontWeight: '600'}}>fontWeight: 600</Text>
+            <Text style={{fontSize: 30, fontWeight: '700'}}>fontWeight: 700</Text>
+            <Text style={{fontSize: 30, fontWeight: '800'}}>fontWeight: 800</Text>
+            <Text style={{fontSize: 30, fontWeight: '900'}}>fontWeight: 900</Text>
+        </ScrollView>
     )
 }
 
 const IncludeFontPaddingStyle = () => {
     return (
-        <View>
-            <Text style={{fontSize: 40}}>includeFontPadding 속성은 글꼴의 패딩값을 없애고 싶을 때 사용합니다.</Text>
-            <Text style={{fontSize: 40, includeFontPadding: false, backgroundColor: 'skyblue', marginVertical: 20}}>includeFontPadding: false</Text>
-            <Text style={{fontSize: 40, includeFontPadding: true, backgroundColor: 'skyblue'}}>includeFontPadding: true</Text>
-        </View>
+        <ScrollView showsVerticalScrollIndicator={false}>
+            <Text style={{fontSize: 30}}>includeFontPadding 속성은 글꼴의 패딩값을 없애고 싶을 때 사용합니다.</Text>
+            <Text style={{fontSize: 30, includeFontPadding: false, backgroundColor: 'skyblue', marginVertical: 20}}>includeFontPadding: false</Text>
+            <Text style={{fontSize: 30, includeFontPadding: true, backgroundColor: 'skyblue'}}>includeFontPadding: true</Text>
+        </ScrollView>
     )
 }
 
