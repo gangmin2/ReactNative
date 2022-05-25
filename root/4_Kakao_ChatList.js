@@ -198,14 +198,17 @@ const chatAlert = ( name="정의되지 않은" ) => {
   
 const Item = ({ title, description, date }) => (
     <TouchableOpacity style={styles.itemContainer} onPress={() => chatAlert(title)}>
-        <Image source={require("../img/profileImg/profile.jpg")} style={styles.profileImg}/>
-        <View style={{flexDirection: 'row', justifyContent: 'space-between', width: '82%'}}>
-            <View>
+        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', marginRight: 10}}>
+            <Image source={require("../img/profileImg/profile.jpg")} style={styles.profileImg}/>
+        </View>
+        <View style={{flex: 5, flexDirection: 'row'}}>
+            <View style={{flex: 4}}>
                 <Text style={styles.titleText}>{title}</Text>
                 <Text style={styles.descriptionText}>{description}</Text>
             </View>
-        
-            <Text style={styles.dateText}>{date}</Text>
+            <View style={{flex: 1, alignItems: 'flex-end'}}>
+                <Text style={styles.dateText}>{date}</Text>
+            </View>
         </View>
     </TouchableOpacity>
 );
@@ -282,24 +285,24 @@ const styles = StyleSheet.create({
         color: '#8C8C8C'
     },
     titleText: {
-        fontSize: 25
+        fontSize: 17,
+        fontWeight: '600'
     },
     descriptionText: {
-        fontSize: 17
+        fontSize: 15
     },
     dateText: {
-        fontSize: 14
+        fontSize: 12,
     },
     itemContainer: {
         flexDirection: 'row',
         margin: 10
     },
     profileImg: {
-        width: 50,
-        height: 50,
-        marginRight: 10,
+        width: 55,
+        height: 55,
         borderWidth: 1,
-        borderColor: 'gray',
+        borderColor: '#AAAAAA',
         borderRadius: 10
     }
 })
