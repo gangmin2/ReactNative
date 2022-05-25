@@ -3,6 +3,8 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import SectionLine from './root/util/section'
+
 import HelloWorld from './root/1_Hello_World';
 import ImageScreen from './root/2_Image';
 import KakaoProfile from './root/3_Kakao_Profile';
@@ -17,26 +19,38 @@ const Home = ({ navigation }) => {
       <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Hello World!")}>
         <Text style={styles.text}>View, Text, StyleSheet (Hello World! 출력하기)</Text>
       </TouchableOpacity>
+
+      <SectionLine/>
       
       <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Image")}>
         <Text style={styles.text}>Image (이미지 출력하기)</Text>
       </TouchableOpacity>
 
+      <SectionLine/>
+
       <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("KakaoProfile")}>
         <Text style={styles.text}>카카오톡 프로필 따라해보기</Text>
       </TouchableOpacity>
+
+      <SectionLine/>
 
       <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("KakaoChat")}>
         <Text style={styles.text}>카카오톡 채팅방 리스트 따라해보기</Text>
       </TouchableOpacity>
 
+      <SectionLine/>
+
       <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("KakaoTab")}>
         <Text style={styles.text}>카카오톡 네비게이션 적용해보기</Text>
       </TouchableOpacity>
+
+      <SectionLine/>
       
       <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Loading")}>
         <Text style={styles.text}>ActivityIndicator (로딩 인디케이터 띄워보기)</Text>
       </TouchableOpacity>
+
+      <SectionLine/>
 
       <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Layout and Style")}>
         <Text style={styles.text}>Layout and Style (여러가지 레이아웃 및 스타일 구성해보기)</Text>
@@ -72,8 +86,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   touchableContainer: {
-    borderBottomWidth: 1,
-    borderColor: 'gray',
     width: '100%',
     padding: 15,
   },

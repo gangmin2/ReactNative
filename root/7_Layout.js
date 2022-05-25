@@ -1,8 +1,9 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
-import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import SectionLine from './util/section';
 
 import Flex from './Layout/1_flex';
 import WidthandHeight from './Layout/2_width_height';
@@ -20,27 +21,51 @@ const Home = ({ navigation }) => {
             <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Flex")}>
                 <Text style={styles.text}>Flex</Text>
             </TouchableOpacity>
+
+            <SectionLine />
+
             <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Width and Height")}>
                 <Text style={styles.text}>Width and Height</Text>
             </TouchableOpacity>
+
+            <SectionLine />
+
             <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Flex Direction")}>
                 <Text style={styles.text}>Flex Direction</Text>
             </TouchableOpacity>
+
+            <SectionLine />
+
             <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Justify Content")}>
                 <Text style={styles.text}>Justify Content</Text>
             </TouchableOpacity>
+
+            <SectionLine />
+
             <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Align Items")}>
                 <Text style={styles.text}>Align Items</Text>
             </TouchableOpacity>
+
+            <SectionLine />
+
             <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Absolute")}>
                 <Text style={styles.text}>Absolute</Text>
             </TouchableOpacity>
+
+            <SectionLine />
+
             <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Image Styles")}>
                 <Text style={styles.text}>Image Styles</Text>
             </TouchableOpacity>
+
+            <SectionLine />
+
             <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("Text Styles")}>
                 <Text style={styles.text}>Text Styles</Text>
             </TouchableOpacity>
+
+            <SectionLine />
+
             <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate("View Styles")}>
                 <Text style={styles.text}>View Styles</Text>
             </TouchableOpacity>
@@ -77,8 +102,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   touchableContainer: {
-    borderBottomWidth: 1,
-    borderColor: 'gray',
     width: '100%',
     padding: 15,
   },
